@@ -86,6 +86,10 @@ Route::get('/jeriel-test/', function () {
 });
 
 
+////////// admin page////////////
+
+Route::get('/my-admin-page/', 'adminpageController@article_list')->middleware('auth');
+Route::get('/my-admin-page/editarticle/{id}', 'adminpageController@article_update')->middleware('auth');
 //////// FB ///////////
 
 Route::get('/covid-19', function () {
