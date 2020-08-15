@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.protectedmessage.com [NC]
+RewriteRule ^(.*)$ https://protectedmessage.com/$1 [L,R=301]
